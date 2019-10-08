@@ -1,0 +1,57 @@
+:root{
+    --mainnavy: #6c788e;
+    --mainbeige: #dbd0be;
+    --mainblack: #555658;
+    --subwhite:#e3e4e6;
+    --subpink:#dea392;
+}
+
+section{
+    display: flex;
+  align-items: center;
+}
+
+._concept, ._logo{
+    margin: 20vh 0;
+}
+
+p{
+    width: 20vw;
+}
+
+h1{
+  font-size: 8vw;
+  position: relative;
+  left: -1.5vw;
+}
+
+h2{
+  font-family: 'Antro Vectra';
+  font-weight: lighter;
+  width: 20vw;
+  font-size: 2vw;
+}
+
+.moji{
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navy{
+    background-color: var(--mainnavy);
+    color: var(--subwhite);
+}
+
+.cp_img{
+    width: 50vw;
+    height: 50vw;
+}
+
+.ep_logo{
+    width: 40vw;
+    margin: 5vw;
+}

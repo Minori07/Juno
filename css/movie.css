@@ -1,0 +1,103 @@
+:root{
+    --mainnavy: #6c788e;
+    --mainbeige: #dbd0be;
+    --mainblack: #555658;
+    --subwhite:#e3e4e6;
+    --subpink:#dea392;
+}
+
+.video{
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.movie_top{
+    height: 100vh;
+}
+
+.play{
+    position: absolute;
+    top: 40vh;
+    left: 45vw;
+    width: 7vw;
+    z-index: 10;
+}
+
+h1{
+    color: var(--subwhite);
+    position: absolute;
+    right: 5vw;
+    top: 55vh;
+    font-size: 8vw;
+}
+
+h2{
+    font-family: 'Antro Vectra';
+    font-weight: lighter;
+    font-size: 6vh;
+    z-index: 5;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.staff{
+    margin: 20vh 25vw;
+}
+
+.hito{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 0;
+}
+ .hito img{
+     width: 10vw;
+     height: 10vw;
+ }
+
+ .hito p{
+     width: 30vw;
+ }
+
+ .dr{
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ /* designer */
+
+ .de_top{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mainnavy);
+}
+
+.shugo_img{
+    width: 25vw;
+    height: 35vw;
+    position: absolute;
+    left: 37.5vw;
+    top: 20vh;
+    object-fit: cover;
+}
+
+.de_top h1{
+    color: var(--subwhite);
+    position: absolute;
+    left: 12vw;
+    top: 33vh;
+    font-size: 5vw;
+}
+
+.w_line{
+    width: 70vw;
+    position: absolute;
+    top: 57vh;
+    left: 12vw;
+    z-index: 3;
+}
+
+.part{
+    margin: 30vh 0;
+}

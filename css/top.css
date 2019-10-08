@@ -1,0 +1,158 @@
+:root{
+    --mainnavy: #6c788e;
+    --mainbeige: #dbd0be;
+    --mainblack: #555658;
+    --subwhite:#e3e4e6;
+    --subpink:#dea392;
+  }
+
+.top_top{
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.top{
+  margin: 40vh 15vw;
+}
+  
+.about_img{
+  width: 35vw;
+  z-index: 1;
+}
+  
+.moji{
+  padding: 10vh;
+  z-index: 1;
+}
+
+.look_more{
+  position: relative;
+  top: 3vh;
+  left: 50vw;
+  height: fit-content;
+  width: fit-content;
+  border: solid 1px var(--mainblack);
+  text-align: center;
+  z-index: 3;
+  padding: 5px 15px;
+  display: flex;
+  transition : all .2s;
+}
+
+.white{
+  border-color: var(--subwhite);
+}
+
+._product h1{
+  position: relative;
+  top: 30vh;
+  left: 10vw;
+
+}
+
+.pd_img{
+  width: 35vw;
+  position: relative;
+  left: 25vw;
+  z-index: 3;
+}
+
+.st_img{
+  width: 20vw;
+  height: 20vw;
+}
+
+._story div{
+  display: flex;
+  align-items: center;
+}
+
+._story h1{
+  width: 20vw;
+  text-align: center;
+  margin: 5vw;
+}
+
+.mv_img{
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+.mv {
+  position: relative;
+  top: -10vh;
+  left: 65vw;
+}
+
+.de_imgs{
+  display: flex;
+  justify-content: space-between;
+}
+
+.de_img{
+  width: 12vw;
+  height: 17vw;
+  object-fit: cover;
+}
+
+.de_cover{
+    position: absolute;
+    width: 12vw;
+    height: 0;
+    text-align: center;
+    background-color: var(--mainnavy);
+    color: var(--subwhite);
+    opacity: 0;
+    transition : all 500ms;
+}
+
+.de_cover h3{
+    margin-top: 6vh;
+    font-size: 2vw;
+}
+
+.de_cover:hover{
+    height: 17vw;
+    opacity: 1;
+}
+
+.p_pd2{
+    background-color: var(--mainbeige);
+    color: var(--mainblack);
+    left: 14.5vw;
+}
+
+.p_gp{
+    left: 29vw;
+}
+
+.p_mv{
+    background-color: var(--mainbeige);
+    color: var(--mainblack);
+    right: 14.5vw;
+}
+
+.p_wb{
+    right: 0;
+}
+
+
+._designer h1{
+  text-align: center;
+}
+
+._contact{
+  text-align: center;
+  margin: 10vh 0;
+  font-size: 40px;
+}
+
+.ct_moji{
+  position: relative;
+  color: white;
+  top: -15vh;
+}
