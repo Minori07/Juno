@@ -1,0 +1,69 @@
+:root{
+    --mainnavy: #6c788e;
+    --mainbeige: #dbd0be;
+    --mainblack: #555658;
+    --subwhite:#e3e4e6;
+    --subpink:#dea392;
+}
+
+.top{
+    height: 100vh;
+}
+
+.top_st{
+    width: 0vw;
+    height: 17vw;
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    z-index: 3;
+    transition : all 0.5s;
+}
+
+h1{
+    position: absolute;
+    top: 48vh;
+    left: 18vw;
+    opacity: 0;
+    font-size: 7vw;
+    transition : all 1s;
+}
+
+.top p{
+    color: var(--subwhite);
+    width: 30vw;
+    position: absolute;
+    top: 50vh;
+    left: 55vw;
+    z-index: 5;
+    opacity: 0;
+    transition : all 1s;
+}
+
+.times{
+    margin: 5vh 0 30vh 0;
+}
+.times p{
+    font-family: 'Antro Vectra';
+    font-size: 4vh;
+    width: 15vw;
+    padding: 1vh;
+    position: relative;
+    left: 0;
+    transition : all 0.5s;
+}
+
+.hari{
+    position: absolute;
+    top: 133vh;
+    left: -3vw;
+    width: 70vw;
+}
+
+#time_img{
+    position: absolute;
+    top: 110vh;
+    left: 30vw;
+    width: 65vw;
+    transition : all 1s;
+}

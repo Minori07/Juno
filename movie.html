@@ -11,20 +11,21 @@
 <link rel="stylesheet" href="css/square.css">
 </head>
 <body>
+    <div id="cover"></div>
     <header>
         <nav>
             <ul>
-                <a href="./top.html"><li>top</li></a>
-                <a href="./about.html"><li>about</li></a>
-                <a href="./product.html"><li>product</li></a>
-                <a href=""><li>story</li></a>
-                <a href="#top"><li>movie</li></a>
-                <a href="./designer.html"><li>designer</li></a>
-                <a href="mailto:mino0730.t@gmail.com?body=WEB担当高村のメールアドレスです。"><li>contact</li></a>
+                    <a id="go_top"><li>top</li></a>
+                    <a id="go_about"><li>about</li></a>
+                    <a id="go_product"><li>product</li></a>
+                    <a id="go_story"><li>story</li></a>
+                    <a href="#top"><li>movie</li></a>
+                    <a id="go_designer"><li>designer</li></a>
+                    <a href="mailto:mino0730.t@gmail.com?body=WEB担当高村のメールアドレスです。"><li>contact</li></a>
             </ul>
         </nav>
     </header>
-    <section class="movie_top" id="#top">
+    <section class="movie_top" id="top">
         <video src="sample_yuki.mp4" class="video" id="video"></video>
         <div class="navy_cover"></div>
         <button id="play"><img src="image/play_button.png" class="play"></button>
@@ -35,15 +36,17 @@
             <h2>Actor</h2>
             <div class="name_beige"></div>
             <div class="hito">
-                <img src="image/gray.png">
-                <p>
-                    プロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィール
+                <img src="image/miran.png">
+                <p class="fadein">
+                        釜谷諒子<br>
+                    建築都市デザイン学科　3年
                 </p>
             </div>
             <div class="hito">
-                    <img src="image/gray.png">
-                    <p>
-                        プロフィール
+                    <img src="image/harumaro.png">
+                    <p class="fadein">
+                        服部馨斗<br>
+                        建築都市デザイン学科　3年
                     </p>
                 </div>
         </section>
@@ -51,9 +54,10 @@
             <h2>Director</h2>
             <div class="name_navy"></div>
             <div class="hito">
-                <img src="image/gray.png">
-                <p>
-                    プロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィール
+                <img src="image/mas_der.png">
+                <p class="fadein">
+                    古田七海<br>
+                    情報環境デザイン学科 3年
                 </p>
             </div>
         </section>
@@ -61,18 +65,19 @@
     <footer>
         <div class="foot_nav">
         <ul class="white">
-            <a href=""><li>top</li></a>
-            <a href=""><li>about</li></a>
-            <a href=""><li>product</li></a>
-            <a href=""><li>story</li></a>
-            <a href=""><li>movie</li></a>
-            <a href=""><li>designer</li></a>
-            <a href=""><li>contact</li></a>
+                <a id="go_top"><li>top</li></a>
+                <a id="go_about"><li>about</li></a>
+                <a id="go_product"><li>product</li></a>
+                <a id="go_story"><li>story</li></a>
+                <a href="#top"><li>movie</li></a>
+                <a id="go_designer"><li>designer</li></a>
+                <a href="mailto:mino0730.t@gmail.com?body=WEB担当高村のメールアドレスです。"><li>contact</li></a>
         </ul>
         <img src="image/sub_logo.png">
         </div>
         <p class="chosaku">©️  2019  NCU ISSHINDOTAI</p>
     </footer>
     </body>
+    <script src="js/movie.js"></script>
     <script src="js/main.js"></script>
 </html>

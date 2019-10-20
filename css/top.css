@@ -8,13 +8,20 @@
 
 .top_top{
   height: 100vh;
-  background-color: lightgray;
 }
 
 .top{
   margin: 40vh 15vw;
 }
-  
+ 
+.top_img{
+  transition : all 1.5s;
+  width: 110vw;
+  height: 100vh;
+  opacity: 0;
+  object-fit: cover;
+}
+
 .about_img{
   width: 35vw;
   z-index: 1;

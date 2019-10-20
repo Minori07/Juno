@@ -47,9 +47,13 @@ li{
 .logo img{
   width: 37vw;
   position: absolute;
-  top: 50vh;
-  left: 50vw;
+  top: 35vh;
+  left: 30vw;
+  opacity: 0;
+  z-index: 5;
+  transition : all 1s;
 }
+
 
 h1{
   font-family: 'Antro Vectra';
@@ -61,8 +65,7 @@ h1{
 footer{
   background-color: var(--mainnavy);
   color: var(--subwhite);
-  padding: 15vh 20vw;
-  
+  padding: 15vh 20vw 5vh 20vw;  
 }
 
 .foot_nav{
@@ -79,7 +82,7 @@ footer img{
   position: relative;
   width: fit-content;
   font-size: 5px;
-  bottom: -10vh;
+  padding: 10vh 0 0 0;
   left: 25vw;
 }
 
@@ -93,79 +96,6 @@ footer img{
   opacity: 1;
   transform: translate(0, 0);
 }
-
-path{
-  stroke: var(--mainblack);
-  fill: none;
-  stroke-width: 3;
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
-  animation: DASH 3s ease-in alternate forwards;
-  -webkit-animation: DASH 3s ease-in 0s forwards;
-  -o-animation: DASH 3s ease-in 0s forwards;
-  animation: DASH 3s ease-in 0s forwards;
-}
-@keyframes DASH {
-  0% {
-      stroke-dashoffset: 3000;
-  }
-  70%{
-      fill:transparent;
-  }
-  100% {
-      stroke-dashoffset: 0;
-      fill: var(--mainblack);
-  }
-}
-@-moz-keyframes DASH {
-  0% {
-      stroke-dashoffset: 3000;
-  }
-  70%{
-      fill:transparent;
-  }
-  100% {
-      stroke-dashoffset: 0;
-      fill: var(--mainblack);
-  }
-}
-@-webkit-keyframes DASH {
-  0% {
-      stroke-dashoffset: 3000;
-  }
-  70%{
-      fill:transparent;
-  }
-  100% {
-      stroke-dashoffset: 0;
-      fill: var(--mainblack);
-  }
-}
-@-o-keyframes DASH {
-  0% {
-      stroke-dashoffset: 3000;
-  }
-  70%{
-      fill:transparent;
-  }
-  100% {
-      stroke-dashoffset: 0;
-      fill: var(--mainblack);
-  }
-}
-@-ms-keyframes DASH {
-  0% {
-      stroke-dashoffset: 3000;
-  }
-  70%{
-      fill:transparent;
-  }
-  100% {
-      stroke-dashoffset: 0;
-      fill: var(--mainblack);
-  }
-}
-
 
 body {
   transition: all 1s;

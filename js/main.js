@@ -1,5 +1,5 @@
 var rellax = new Rellax(' .rellax ',{
-    
+
   // 中央寄せ
   center: true
   
@@ -19,23 +19,11 @@ $(window).scroll(function (){
         }
     });
 
-    $('.name_beige').each(function(){
-        var elemPos = $(this).offset().top,
-        scroll = $(window).scrollTop(),
-        windowHeight = $(window).height();
-        if (scroll > elemPos - windowHeight + 100){
-            $(this).css()
-        }
-        if (scroll > elemPos - windowHeight + 800){
-            $(this).removeClass('scrollin');
-        }
-    });
-
     $('body').each(function(){
         var elemPos = $(this).offset().top,
         scroll = $(window).scrollTop(),
         windowHeight = $(window).height();
-        console.log(scroll);
+        // console.log(scroll);
         if(scroll >= 700){
             $('.beige_line').css({"width":'100vw'});
         }
@@ -60,7 +48,16 @@ $(window).scroll(function (){
 
 $(function(){
 
-    $('html,body').animate({ scrollTop: 0,scrollLeft: 0 }, '1');
+    // $('html,body').animate({ scrollTop: 0,scrollLeft: 0 }, '1');
+    $('.logo img').css({"opacity":'1'})
+    setTimeout(logo, 1000);
+
+    function logo() {
+        $('.logo img').css({"top":'50vh'})
+        $('.logo img').css({"left":'50vw'})
+        $('.top_img').css({"opacity":'1'})
+        $('.top_img').css({"width":'100vw'})
+    }
 
      // #で始まるアンカーをクリックした場合に処理
     $('a[href^="#"]').click(function() {
@@ -77,29 +74,43 @@ $(function(){
         $('body,html').animate({scrollTop:position, scrollLeft:0}, speed, 'swing');
         return false;
     });
-
-    const video = document.querySelector('#video');
-    const video_btn = document.querySelector('#play');
-    let is_playing = false;
-
-    video_btn.addEventListener('click', () => {
-      if (!is_playing) {
-        video.play();
-        is_playing = true;
-      } else {
-        video.pause();
-        is_playing = false;
-      }
-    });
 });
 
-
+var url = ""
 function linkUrl() {
-    location.href = './about.html'
+    location.href = url
 
 }
-var bt5 = document.getElementById('go_about');
-bt5.addEventListener('click', function() {
+
+$('#go_top').click(function() {
+    url = './index.html'
+    $('#cover').css({"width":'100vw'});
+    setTimeout(linkUrl, 1000);
+});
+$('#go_about, #go_about2').click(function() {
+    url = './about.html'
+    $('#cover').css({"width":'100vw'});
+    setTimeout(linkUrl, 1000);
+});
+$('#go_product, #go_product2').click(function() {
+    url = './product.html'
+    $('#cover').css({"background-color":'var(--mainblack)'});
+    $('#cover').css({"width":'100vw'});
+    setTimeout(linkUrl, 1000);
+});
+$('#go_story ,#go_story2').click(function() {
+    url = './story.html'
+    $('#cover').css({"width":'100vw'});
+    setTimeout(linkUrl, 1000);
+});
+$('#go_movie, #go_movie2').click(function() {
+    url = './movie.html'
+    $('#cover').css({"width":'100vw'});
+    setTimeout(linkUrl, 1000);
+});
+$('#go_designer, #go_designer2').click(function() {
+    url = './designer.html'
+    $('#cover').css({"background-color":'var(--mainnavy)'});
     $('#cover').css({"width":'100vw'});
     setTimeout(linkUrl, 1000);
 });

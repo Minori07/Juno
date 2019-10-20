@@ -11,6 +11,10 @@ section{
   align-items: center;
 }
 
+._top{
+    height: 100vh;
+}
+
 ._concept, ._logo{
     margin: 20vh 0;
 }
@@ -49,9 +53,15 @@ h2{
 .cp_img{
     width: 50vw;
     height: 50vw;
+    z-index: 3;
 }
 
 .ep_logo{
     width: 40vw;
     margin: 5vw;
+}
+
+.top_in{
+    opacity: 0;
+    transition: all 1s;
 }
