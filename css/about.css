@@ -6,6 +6,11 @@
     --subpink:#dea392;
 }
 
+@font-face {
+  font-family: 'Antro_Vectra';
+  src:url('../fonts/Antro_Vectra.otf');
+}
+
 section{
     display: flex;
   align-items: center;

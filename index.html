@@ -6,14 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="./rellax-master/rellax.min.js"></script>
-<link rel="stylesheet" href="css/square.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/top.css">
+<link rel="stylesheet"  href="css/square.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="css/main.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="css/top.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="mobile_css/m_top.css">
 </head>
 <body>
     <div id="cover"></div>
     <section class="top_top" id="top">
         <header>
+            <a class="menu-trigger" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
             <nav>
                 <ul>
                     <a href="#top"><li>top</li></a>
@@ -29,14 +35,13 @@
         <img src="image/gray.png" class="top_img">
         <div class="logo"><img src="image/main_logo.png"></div>
     </section>
-    <div class="beige_line"></div>
     <div class="rellax beige_box1" data-rellax-speed="5"></div>
     <div class="navy_box1"></div>
-    <div class="rellax beige_box2" data-rellax-speed="-2"></div>
-    <div class="rellax navy_box2" data-rellax-speed="-4"></div>
+    <div class="rellax navy_box2" data-rellax-speed="-3"></div>
     <section class="top _about">
-        <div style="display: flex;">
+        <div style="display: flex;" class="m_about">
             <img src="image/gray.png" class="rellax about_img" data-rellax-speed="-3">
+            <div class="beige_line"></div>
             <div class="moji fadein">
             <h1>About</h1>
             <p>
@@ -58,9 +63,10 @@
     </section>
     <section class="top _story">
         <div>
-            <img src="image/gray.png" class="rellax st_img" data-rellax-speed="2">
+            <img src="image/boy.jpg" class="rellax st_img" data-rellax-speed="1">
             <h1 class="fadein">story</h1>
-            <img src="image/gray.png" class="rellax st_img" data-rellax-speed="-5">
+            <div class="rellax beige_box2" data-rellax-speed="-2"></div>
+            <img src="image/girl.jpg" class="rellax st_img" data-rellax-speed="-4">
         </div>
         <div class="look_more">
             <a id="go_story2">LOOK MORE -></a>
@@ -88,7 +94,7 @@
     <section class="top _access">
         <h1>Access</h1>
         <div class="de_imgs">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.724881332406!2d136.94554226925632!3d35.18137563299694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003705a45b7e0cd%3A0xcea9a0e7712b9848!2z5ZCN5Y-k5bGL5biC56uL5aSn5a2mIOWMl-WNg-eoruOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1569930495286!5m2!1sja!2sjp" width="450" height="350" frameborder="0" style="border:solid 1px var(--mainnavy);" allowfullscreen="" class="rellax" data-rellax-speed="3"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.724881332406!2d136.94554226925632!3d35.18137563299694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003705a45b7e0cd%3A0xcea9a0e7712b9848!2z5ZCN5Y-k5bGL5biC56uL5aSn5a2mIOWMl-WNg-eoruOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1569930495286!5m2!1sja!2sjp" width="450" height="350" frameborder="0" style="border:solid 1px var(--mainnavy);" allowfullscreen="" class="rellax map" data-rellax-speed="3"></iframe>
                 <p class="fadein">
                         〒464-0083<br>
                         愛知県名古屋市立大学千種区北千種2-1-10<br>
@@ -98,8 +104,8 @@
                         市バス「清明山」徒歩５分<br>
                         名城線ナゴヤドーム前矢田駅 １番出口より徒歩１５分<br><br>
                         
-                        OPEN 10:00-18:00<br>
-                        CLOSE 火曜日<br>
+                        OPEN 10:00-21:00<br>
+                        CLOSE 不定休<br>
                 </p>
         </div>
     </section>

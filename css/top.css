@@ -24,6 +24,7 @@
 
 .about_img{
   width: 35vw;
+  height: 36vw;
   z-index: 1;
 }
   
@@ -67,6 +68,7 @@
 .st_img{
   width: 20vw;
   height: 20vw;
+  object-fit: cover;
 }
 
 ._story div{
@@ -162,4 +164,6 @@
   position: relative;
   color: white;
   top: -15vh;
+
 }
+

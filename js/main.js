@@ -47,10 +47,11 @@ $(window).scroll(function (){
 });
 
 $(function(){
-
+    if($(window).width() >= 640){
     // $('html,body').animate({ scrollTop: 0,scrollLeft: 0 }, '1');
     $('.logo img').css({"opacity":'1'})
     setTimeout(logo, 1000);
+    }
 
     function logo() {
         $('.logo img').css({"top":'50vh'})
@@ -114,3 +115,17 @@ $('#go_designer, #go_designer2').click(function() {
     $('#cover').css({"width":'100vw'});
     setTimeout(linkUrl, 1000);
 });
+
+if($(window).width() < 640){
+    var nav_non = true;
+    $('ul').addClass('none');
+    $('.menu-trigger').click(function(){
+        if(nav_non){
+            $('ul').removeClass('none');
+            console.log(nav_non = false);
+        }else{
+            $('ul').addClass('none');
+            console.log(nav_non= true);
+        }
+    });
+}

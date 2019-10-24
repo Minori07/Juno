@@ -6,6 +6,11 @@
     --subpink:#dea392;
 }
 
+@font-face {
+  font-family: 'Antro_Vectra';
+  src:url('../fonts/Antro_Vectra.otf');
+}
+
 .top{
     height: 100vh;
 }
@@ -33,7 +38,7 @@ h1{
     color: var(--subwhite);
     width: 30vw;
     position: absolute;
-    top: 50vh;
+    top: 55vh;
     left: 55vw;
     z-index: 5;
     opacity: 0;
@@ -62,7 +67,7 @@ h1{
 
 #time_img{
     position: absolute;
-    top: 110vh;
+    top: 120vh;
     left: 30vw;
     width: 65vw;
     transition : all 1s;
