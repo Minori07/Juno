@@ -43,12 +43,18 @@ $(window).scroll(function (){
             var ob_pos = "50% "+video_pos + "%";
             $('.mv_img').css({"object-position": ob_pos})
         }
+        if(scroll >=370){
+            $('.nav').removeClass('white');
+        }
+        if(scroll < 370){
+            $('.nav').addClass('white');
+        }
     });
 });
 
 $(function(){
     if($(window).width() >= 640){
-    // $('html,body').animate({ scrollTop: 0,scrollLeft: 0 }, '1');
+    $('html,body').animate({ scrollTop: 0,scrollLeft: 0 }, '1');
     $('.logo img').css({"opacity":'1'})
     setTimeout(logo, 1000);
     }
@@ -58,6 +64,7 @@ $(function(){
         $('.logo img').css({"left":'50vw'})
         $('.top_img').css({"opacity":'1'})
         $('.top_img').css({"width":'100vw'})
+        $('.top_img').css({"filter": 'blur(3px);'})
     }
 
      // #で始まるアンカーをクリックした場合に処理

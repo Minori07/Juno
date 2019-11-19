@@ -15,13 +15,6 @@ $(window).scroll(function (){
         scroll = $(window).scrollTop(),
         windowHeight = $(window).height();
         // console.log(scroll);
-        if(scroll >=370){
-            $('ul').removeClass('white');
-        }
-        if(scroll < 370){
-            $('ul').addClass('white');
-        }
-
         if(scroll >=2000){
             $('.beige_line2').css({"width":'100vw'});
         }

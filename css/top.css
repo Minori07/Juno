@@ -10,6 +10,15 @@
   height: 100vh;
 }
 
+.white_cover{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--subwhite);
+  opacity: .4;
+}
 .top{
   margin: 40vh 15vw;
 }
@@ -26,6 +35,7 @@
   width: 35vw;
   height: 36vw;
   z-index: 1;
+  object-fit: cover;
 }
   
 .moji{
@@ -63,6 +73,7 @@
   position: relative;
   left: 25vw;
   z-index: 3;
+  object-fit: cover;
 }
 
 .st_img{
@@ -166,4 +177,3 @@
   top: -15vh;
 
 }
-

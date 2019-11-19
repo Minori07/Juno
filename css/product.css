@@ -61,6 +61,7 @@
 .pd_ml{
   width: 49.9vw;
   height: 49.9vw;
+  object-fit: cover;
 }
 
 .explain1{
@@ -72,6 +73,7 @@
     height: 35vw;
     position: relative;
     top: -10vh;
+    object-fit: cover;
 }
 
 .ex_img2{
@@ -80,6 +82,7 @@
     position: relative;
     top: 10vh;
     right: -15vw;
+    object-fit: cover;
 }
 
 .ex_img3{
@@ -88,13 +91,14 @@
     position: relative;
     top: 5vh;
     left: -15vw;
+    object-fit: cover;
 }
 
 .explain1 p{
     position: relative;
     left: 42vw;
     top: -40vh;
-    width: 20vw;
+    width: 23vw;
 }
 
 .explain2{
@@ -106,8 +110,46 @@
 .ex_img4{
     width: 40vw;
     height: 40vw;
+    object-fit: cover;
 }
 
 .explain2 p{
     width: 20vw;
+}
+
+.mens{
+  background-color: var(--mainnavy);
+  position: absolute;
+  left: 0;
+}
+
+.mens p{
+  font-family: 'Antro Vectra';
+  font-size: 100px;
+  padding-right: 5vw;
+  text-align: right;
+  color: black;
+}
+
+.ladies{
+  background-color: var(--mainbeige);
+  position: absolute;
+  right: 0;
+}
+
+.ladies p{
+  font-family: 'Antro Vectra';
+  font-size: 100px;
+  padding-left: 5vw;
+}
+
+.ml_box{
+  width: 49.9vw;
+  height: 49.9vw;
+  opacity: 0;
+}
+
+.ml_box:hover{
+  opacity: .5;
+  transition : all 0.5s;
 }

@@ -10,19 +10,6 @@ function fadein() {
 }
 
 $(window).scroll(function (){
-
-    $('body').each(function(){
-        var elemPos = $(this).offset().top,
-        scroll = $(window).scrollTop(),
-        windowHeight = $(window).height();
-        // console.log(scroll);
-        if(scroll >=370){
-            $('ul').removeClass('white');
-        }
-        if(scroll < 370){
-            $('ul').addClass('white');
-        }
-    });
     $('.name_beige').each(function(){
         var elemPos = $(this).offset().top,
         scroll = $(window).scrollTop(),

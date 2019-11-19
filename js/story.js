@@ -14,8 +14,9 @@ function late2() {
     $('.top p').css({"opacity":1})
 }
 
+$(window).scroll(function (){
 time = $('.times p');
-var pics_src = new Array("./image/6.32.png","./image/7.38.png","./image/8.43.png","./image/12.0.png",
+var pics_src = new Array("./image/6.32.png","./image/7.38.png","./image/8.43.png","./image/12.0.png","./image/15.16.png",
 "./image/16.21.png","./image/17.27.png","./image/19.38.png","./image/22.54.png","./image/0.00.png","./image/2.10.png");
 $('.times p').click(function() {
     time.css({"background-color":'transparent'})
@@ -26,4 +27,10 @@ $('.times p').click(function() {
     n = Number($(this).attr('id'));
     document.getElementById("time_img").src = pics_src[n];
     console.log(pics_src[n]);
+    // if($(window).scrollTop() > 700){
+    //     pos = $(window).scrollTop()+150;
+    //     $('#time_img').css({"top":pos});
+    // }
+});
+
 });

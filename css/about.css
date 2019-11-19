@@ -20,6 +20,16 @@ section{
     height: 100vh;
 }
 
+.back_img{
+    width: 20vw;
+    position: absolute;
+    opacity:  0.3;
+}
+.moji p{
+    position: relative;
+    z-index: 2;
+}
+
 ._concept, ._logo{
     margin: 20vh 0;
 }
@@ -59,6 +69,7 @@ h2{
     width: 50vw;
     height: 50vw;
     z-index: 3;
+    object-fit: cover;
 }
 
 .ep_logo{
